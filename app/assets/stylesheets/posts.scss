@@ -76,7 +76,7 @@ footer {
   margin: auto;
   color: white;
   position: absolute;/*←絶対位置*/
-  bottom: 0;
+  bottom: 0px;
 }
 footer p{
   font-size: 0.8rem;
@@ -88,4 +88,12 @@ footer p{
 }
 .about_main{
   background-color: azure;
+}
+.tweet_list{
+  text-align: center 
+}
+.test{
+  margin: 0 auto;
+  width: 800px;
+  background-color:lightsteelblue
 }

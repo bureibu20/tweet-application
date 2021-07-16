@@ -1,0 +1,17 @@
+<h1>みんなの気持ち一覧</h1>
+<table class ="test">
+  <tr>
+    <th>投稿者</th>
+    <th>今の気持ち</th>
+  </tr>
+<% @posts.each do |post| %>
+  <tr>
+    <td><%= post.name %></td>
+    <td><%= post.content %></td>
+    <td><%= link_to '詳細を確認する', post_path(post.id) %></td>
+  </tr>
+<% end %>
+</table>
+<%= link_to '新しくTweetする', new_post_path %>
+<br>
+<br>
