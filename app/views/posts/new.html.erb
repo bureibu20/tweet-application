@@ -1,0 +1,14 @@
+<%= form_with(model: @post, local: true) do |form| %>
+  <p>
+    ↓下のフォームから今の気持ちを共有する↓
+  </p>
+  <div class="post_name">
+    <%= form.label :お名前 %><br>
+    <%= form.text_field :name %>
+  </div>
+  <div class="post_content">
+    <%= form.label :今の気持ち %><br>
+    <%= form.text_field :content %>
+  </div>
+  <%= form.submit %>
+<% end %>

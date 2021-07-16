@@ -1,0 +1,91 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  text-align: center;
+  }    
+/* ここから */
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.cleafix{
+  width: 100%;
+}
+header {
+  height: 50px;
+  background-color: #2B2B2B;
+}
+.left {
+  float: left;
+}
+.fright{
+  float:right;
+}
+.right{
+  float: left;
+}
+/* ヘッダーの余白を削除 */
+.clearfix ul {
+  margin: 0px; 
+}
+header ul a{
+  text-decoration: none;
+  color: #fff;
+}
+header li {
+  list-style: none;
+  padding: 15px 10px;  
+}
+.about {
+/* About Achieve部分の実装 */
+  font-size: 1.5rem;
+  height: 500px;
+
+
+}
+.aboutp{
+  font-size: 1.5rem;
+
+}
+/* ここから */
+.function {
+  background-color: #D3D3D3;
+}
+.function h1{
+  padding-top: 3%;
+}
+/* フレックスボックスで横並び*/
+.function-images{
+  display:flex;
+  justify-content: space-around;
+  padding: 5% 25%;
+  
+}
+.function-image img{
+  margin: 10px;
+}
+/* ここまでがfunction部分の実装 */
+footer {
+/* footer部分の実装 */
+  height: 70px;
+  width: 100%;
+  background-color: #283A4B;
+  margin: auto;
+  color: white;
+  position: absolute;/*←絶対位置*/
+  bottom: 0;
+}
+footer p{
+  font-size: 0.8rem;
+  margin: 0%;
+  padding-top: 15px; 
+}
+.tweet_content{
+  text-align: center 
+}
+.about_main{
+  background-color: azure;
+}
