@@ -11,31 +11,33 @@
   </head>
 
   <body>
-    <header class="clearfix">
-      <ul>
-        <li class="left"><a href="#">Propro</a></li>
-        <li class="left"><a href="#">お問い合わせ</a></li>
-      <div class="fright">
-        <li class="right"><a href="#">サインアップ</a></li>
-        <li class="right"><a href="#">ログイン</a></li>
-      </div>  
-      </ul>
-    </header>
-    <section class="about">
-    
-    <h1 class="about_main">About Propro Tweet</h1>
-    <p class="aboutp">
-      Proproは、プロのエンジニアを目指す受講生のための、TWEETアプリです。<br>
-      つぶやくことで、今の気持ちを共有できます。
-    </p>
-    <p　class="aboutp">
-      <b>今の気持ちを共有して、目の前の壁に取り掛かろう！！</b>    
-    </p>
-    <%= yield %>    
-    </section>
-    <footer>
-    <p>運営会社DIVE INTO CODE株式会社</p>
-    <p>© 2015-2018 Copyright DIVE INTO CODE Corp.</p>
-    </footer>
+    <div class ="wrapper">
+      <header class="clearfix">
+        <ul>
+          <li class="left"><a href="#">Propro</a></li>
+          <li class="left"><a href="#">お問い合わせ</a></li>
+        <div class="fright">
+          <li class="right"><a href="#">サインアップ</a></li>
+          <li class="right"><a href="#">ログイン</a></li>
+        </div>  
+        </ul>
+      </header>
+      <section class="about">
+      
+      <h1 class="about_main">About Propro Tweet</h1>
+      <p class="aboutp">
+        Proproは、プロのエンジニアを目指す受講生のための、TWEETアプリです。<br>
+        つぶやくことで、今の気持ちを共有できます。
+      </p>
+      <p　class="aboutp">
+        <b>今の気持ちを共有して、目の前の壁に取り掛かろう！！</b>    
+      </p>
+      <%= yield %>    
+      </section>
+      <footer class="footer">
+      <p>運営会社DIVE INTO CODE株式会社</p>
+      <p>© 2015-2018 Copyright DIVE INTO CODE Corp.</p>
+      </footer>
+    </div>
   </body>
 </html>
