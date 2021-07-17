@@ -19,13 +19,10 @@ class PostsController < ApplicationController
     end
   end
   def show
-    
   end
   def edit
-    
   end
   def update
-    
     if @post.update(post_params)
       redirect_to posts_path, notice: "気持ちを編集しました！"
     else
