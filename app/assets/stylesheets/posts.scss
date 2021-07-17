@@ -3,19 +3,16 @@ html{
 }
 .wrapper{
   position: relative;
-  width: 100%;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  
+
 }
 body {
   text-align: center;
   }    
-.clearfix::after{
-   content: "";
-   display: block;
-   clear: both;
-}
-.cleafix{
-  width: 100%;
-}
+
 header {
   height: 50px;
   background-color: #2B2B2B;
