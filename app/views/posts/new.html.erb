@@ -1,24 +1,2 @@
-<%= form_with(model: @post, local: true) do |form| %>
-  <% if @post.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= @post.errors.count %>件のエラーがあります。</h2>
-      <ul>
-      <% @post.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-  <p>
-    ↓下のフォームから今の気持ちを共有する↓
-  </p>
-  <div class="post_name">
-    <%= form.label :お名前 %><br>
-    <%= form.text_field :name %>
-  </div>
-  <div class="post_content">
-    <%= form.label :今の気持ち %><br>
-    <%= form.text_field :content %>
-  </div>
-  <%= form.submit %>
-<% end %>
+<h2>気持ちをTweetする</h2>
+<%= render 'form' %>
