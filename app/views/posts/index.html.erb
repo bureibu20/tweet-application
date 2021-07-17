@@ -1,4 +1,5 @@
 <h1>みんなの気持ち一覧</h1>
+<p><%= notice %></p>
 <table class ="test">
   <tr>
     <th>投稿者</th>
@@ -10,6 +11,7 @@
     <td><%= post.content %></td>
     <td><%= link_to '詳細を確認する', post_path(post.id) %></td>
     <td><%= link_to "気持ちを編集する", edit_post_path(post.id) %></td>
+    <td><%= link_to '気持ちを削除する', post_path(post.id), method: :delete %></td>
   </tr>
 <% end %>
 </table>
